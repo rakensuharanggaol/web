@@ -1,0 +1,390 @@
+<html>
+ <head>
+  <title>
+   Library Website
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .header, .footer {
+            background-color: #ffd700;
+            color: #000000;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header img {
+            height: 50px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffd700;
+            padding: 10px 0;
+        }
+        .nav a {
+            margin: 0 15px;
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .main {
+            padding: 20px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #ffd700;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .search-bar button:hover {
+            background-color: #ffcc00;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .content .left, .content .right {
+            width: 48%;
+        }
+        .content .right {
+            text-align: right;
+        }
+        .content .right input[type="text"], .content .right input[type="password"] {
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .content .right button {
+            padding: 10px 20px;
+            background-color: #ffd700;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .content .right button:hover {
+            background-color: #ffcc00;
+        }
+        .news {
+            margin-top: 20px;
+        }
+        .news a {
+            color: #0000ff;
+            text-decoration: none;
+        }
+        .news a:hover {
+            text-decoration: underline;
+        }
+        .book-exhibition {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .book {
+            text-align: center;
+            width: 23%;
+        }
+        .book img {
+            width: 100%;
+            height: auto;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+        }
+        .footer div {
+            width: 20%;
+        }
+        .footer div ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer div ul li {
+            margin-bottom: 10px;
+        }
+        .footer div ul li a {
+            color: #000000;
+            text-decoration: none;
+        }
+        .footer div ul li a:hover {
+            text-decoration: underline;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <img alt="Library Logo" height="50" src="ui.png" width="50"/>
+  </div>
+  <div class="nav">
+   <a href="#">
+    Beranda
+   </a>
+   <a href="#">
+    Tentang Kami
+   </a>
+   <a href="#">
+    Koleksi
+   </a>
+   <a href="#">
+    Layanan
+   </a>
+   <a href="#">
+    UU/NA
+   </a>
+   <a href="#">
+    UI-Booklet
+   </a>
+  </div>
+  <div class="main">
+   <div class="search-bar">
+    <input placeholder="Keyword" type="text"/>
+    <button>
+     Cari
+    </button>
+    <button>
+     Reset
+    </button>
+   </div>
+   <div class="content">
+    <div class="left">
+     <div class="introduction">
+      <h3>
+       Perkenalan
+      </h3>
+      <p>
+       Perkenalkan, nama saya Daniel Richie dengan NIM 222201007. Ini adalah perpustakaan homepage pertama saya, karena saya baru belajar tentang cara membuat website perpustakaan UI. Berikut ini adalah gambar dari gedung Perpustakaan UI.
+      </p>
+      <img alt="Gambar Gedung Perpustakaan UI" height="200" src="https://storage.googleapis.com/a1aa/image/NCHt7wQgfXwfZkE5epQiMsJTZAUVzfG7PffAsl1tVr2SYXO6E.jpg" width="600"/>
+      <h3>  
+        Di Bawah Ini Video perkenalan perpustakaan UI
+      </h3>
+      <p>
+       <iframe allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/tjIFOuroyBs?si=rdciO0askCmEDXsm" width="560">
+       </iframe>
+      </p>
+      <h2 class="text-center"> Pengertian HTML DAN CSS</h2> 
+     </div>
+     <p>
+        HTML adalah bahasa markup standar yang digunakan untuk membuat struktur dan konten halaman web. Dalam HTML, pengembang web mendefinisikan elemen-elemen seperti teks, gambar, tautan, formulir, dan elemen lainnya yang membentuk tampilan halaman web. HTML menggunakan tag-tag untuk menandai elemen-elemen ini sehingga peramban web tahu cara menampilkan mereka.
+        <br></br>
+        CSS adalah bahasa stylesheet yang digunakan untuk mengontrol tata letak dan tampilan halaman web. Dengan CSS, Anda dapat mengatur warna, ukuran, spasi, jenis font, dan banyak properti tata letak lainnya untuk elemen-elemen HTML. Penggunaan CSS memungkinkan pemisahan antara struktur dan tata letak, sehingga HTML dapat fokus pada struktur konten, sementara CSS mengontrol cara konten tersebut ditampilkan.
+       </p>
+       <h2 class="text-center"> PAMERAN BUKU</h2> 
+       <div class="container"></div>
+     <div class="book-exhibition">
+      <div class="book">
+       <img alt="Book 1 Cover" height="200" src="https://storage.googleapis.com/a1aa/image/5zc5gcKfSdR2PCI5s2Ai6ebeRySHvF8z7P8KspJN7Ye5SmjOB.jpg" width="150"/>
+       <p>
+        <strong>
+         Judul Buku 1
+        </strong>   
+        <br/>
+        Pengarang Buku 1
+       </p>
+      </div>
+      <div class="book">
+       <img alt="Book 2 Cover" height="200" src="https://storage.googleapis.com/a1aa/image/eM4fIbNJLGr9gUhFwflCRjRFelfrd4Evu9hx01mXjEJilMHdC.jpg" width="150"/>
+       <p>
+        <strong>
+         Judul Buku 2
+        </strong>
+        <br/>
+        Pengarang Buku 2
+       </p>
+      </div>
+      <div class="book">
+       <img alt="Book 3 Cover" height="200" src="https://storage.googleapis.com/a1aa/image/DWjROyQaRnI9EtThq4KPDx6UC4f5wjjaKKTueZafgWesSmjOB.jpg" width="150"/>
+       <p>
+        <strong>
+         Judul Buku 3
+        </strong>
+        <br/>
+        Pengarang Buku 3
+       </p>
+      </div>
+      <div class="book">
+       <img alt="Book 4 Cover" height="200" src="https://storage.googleapis.com/a1aa/image/fYmWm5QEFZSdB6syWXrpVBOWCXwp5jfj4ifVDpChVjepSmjOB.jpg" width="150"/>
+       <p>
+        <strong>
+         Judul Buku 4
+        </strong>
+        <br/>
+        Pengarang Buku 4
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="right">
+     <h3>
+      Login Sebagai Tamu
+     </h3>
+     <input placeholder="Username" type="text"/>
+     <br/>
+     <input placeholder="Password" type="password"/>
+     <br/>
+     <button>
+      Login
+     </button>
+     <button>
+      Daftar
+     </button>
+    </div>
+   </div>
+  </div>
+  <div class="footer">
+   <div>
+    <h4>
+     Koleksi
+    </h4>
+    <ul>
+     <li>
+      <a href="#">
+       UI e-Documentation &amp; Archive
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       UI e-Books
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       UI e-Journals
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       UI Video Archive
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div>
+    <h4>
+     Sumberdaya Elektronik
+    </h4>
+    <ul>
+     <li>
+      <a href="#">
+       Summon Discovery Search
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Online Bookstore List
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Online Book Library
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Advanced Data Web
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       International Journal of Technology
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div>
+    <h4>
+     E-Books
+    </h4>
+    <ul>
+     <li>
+      <a href="#">
+       Cambridge
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Ebrary
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Gale
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       UI Library
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Springer
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Wiley
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Taylor and Francis
+      </a>
+     </li>
+    </ul>
+   </div>
+   <div>
+    <h4>
+     Research Tools
+    </h4>
+    <ul>
+     <li>
+      <a href="#">
+       Mendeley
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Remote Access to Online Database
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Scopus
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       Turnitin
+      </a>
+     </li>
+     <li>
+      <a href="#">
+       EndNote
+      </a>
+     </li>
+    </ul>
+   </div>
+  </div>
+ </body>
+</html>
