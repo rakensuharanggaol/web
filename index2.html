@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Tugas 1 - Menampilkan data dalam javascript</h2>
+
+<p>Berikut adalah 3 cara menampilkan data dalam javascript:</p>
+
+<ol>
+  <li><strong>Menggunakan document.write()</strong></li>
+  <p>Metode ini akan menuliskan langsung ke dalam halaman web.</p>
+  <pre><code>
+    &lt;script&gt;
+      document.write("&lt;p&gt;Ini adalah data yang ditampilkan dengan document.write()&lt;/p&gt;");
+    &lt;/script&gt;
+  </code></pre>
+
+  <li><strong>Menggunakan innerHTML</strong></li>
+  <p>Metode ini akan memanipulasi konten HTML dari elemen yang sudah ada.</p>
+  <pre><code>
+    &lt;script&gt;
+      var paragraf = document.getElementById("paragraf");
+      paragraf.innerHTML = "&lt;p&gt;Ini adalah data yang ditampilkan dengan innerHTML&lt;/p&gt;";
+    &lt;/script&gt;
+    &lt;p id="paragraf"&gt;&lt;/p&gt;
+  </code></pre>
+
+  <li><strong>Menggunakan createElement()</strong></li>
+  <p>Metode ini akan membuat elemen baru yang kemudian ditambahkan ke dalam halaman web.</p>
+  <pre><code>
+    &lt;script&gt;
+      var paragraf = document.createElement("p");
+      paragraf.textContent = "Ini adalah data yang ditampilkan dengan createElement()";
+      document.body.appendChild(paragraf);
+    &lt;/script&gt;
+  </code></pre>
+</ol>
+
+<h2>Tugas 2 - Implementasi variabel, operator, struktur kondisi dan perulangan</h2>
+
+<p>Berikut adalah contoh halaman HTML dengan implementasi variabel, operator, struktur kondisi dan perulangan.</p>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Perpustakaan&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Daftar Buku&lt;/h2&gt;
+
+ &lt;script&gt;
+  var buku = [
+    {judul: "Buku A", harga: 50000},
+    {judul: "Buku B", harga: 70000},
+    {judul: "Buku C", harga: 30000}
+  ];
+
+  var totalHarga = 0;
+
+  for (var i = 0; i &lt; buku.length; i++) {
+    document.write("&lt;p&gt;" + buku[i].judul + " - Rp " + buku[i].harga + "&lt;/p&gt;");
+    totalHarga += buku[i].harga;
+  }
+
+  document.write("&lt;p&gt;Total Harga: Rp " + totalHarga + "&lt;/p&gt;");
+
+  if (totalHarga &gt; 100000) {
+    document.write("&lt;p&gt;Total harga melebihi Rp 100000&lt;/p&gt;");
+  } else {
+    document.write("&lt;p&gt;Total harga kurang dari Rp 100000&lt;/p&gt;");
+  }
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</body>
+</html>
